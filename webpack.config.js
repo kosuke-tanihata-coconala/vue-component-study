@@ -3,6 +3,7 @@ var webpack = require('webpack')
 
 module.exports = {
   entry: './src/main.js',
+  // entry: '/prac-src/main.js'
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -22,7 +23,6 @@ module.exports = {
         options: {
           loaders: {
           }
-          // other vue-loader options go here
         }
       },
       {
