@@ -1,6 +1,6 @@
 <tempalte>
 <div>
-    <div>
+  <div>
     <span></span>
     <textarea
       class="form-control"
