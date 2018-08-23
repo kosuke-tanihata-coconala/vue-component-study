@@ -3,21 +3,22 @@
     <span
       v-if="!isEditing"
       @click="openEditArea"
-    >{{ value }}</span>
+    >{{ value }}
+    </span>
     <textarea
       v-else
       @blur="applyParent"
       class="form-control"
       type="text"
       v-model="value"
-      ref="ref"
+      ref="textarea"
       rows="3"
     ></textarea>
   </div>
 </template>
 <script>
   export default {
-    // メソッドの引数を指定する
+    // コンポーネントの引数を指定する
     props: {
       initialValue: {
         type: String,
@@ -41,13 +42,22 @@
       openEditArea(){
         this.isEditing = true;
         // データ更新によりdom変更が終わった後に呼ばれるメソッド
-        this.$nextTick(function () { this.$refs.ref.focus() });
+        this.$nextTick(function () {this.$refs.textarea.focus() });
       },
       // 親要素にデータを伝播させる
       applyParent() {
         this.isEditing = false;
         // $emitメソッドを使う事によってのみ親要素を更新する事ができる
         this.$emit('child-update', { [this.contentKey]: this.value} );
+      }
+    },
+    // 値をwatchして変更があったら親に渡しても良い
+    watch: {
+       value: {
+        deep: true,
+        handler(v) {
+          this.$emit('change', v);
+        }
       }
     }
   }

@@ -1,13 +1,13 @@
 <tempalte>
   <div>
     <dl>
-      <dt></dt>
+      <dt>相談タイトル</dt>
       <dd></dd>
 
-      <dt></dt>
+      <dt>相談本文</dt>
       <dd></dd>
 
-      <dt></dt>
+      <dt>相談者名</dt>
       <dd></dd>
     </dl>
   </div>

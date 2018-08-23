@@ -1,6 +1,7 @@
 # vue-component資料
 
-> A Vue.js project
+サポーターズ勉強会用資料
+
 
 ## Build Setup
 

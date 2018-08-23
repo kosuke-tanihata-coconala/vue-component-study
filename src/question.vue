@@ -24,12 +24,12 @@
         <dt>相談者名</dt>
           <dd>
             <question-edit-vue
-            v-if="question.user_name"
-            :initial-value="question.user_name"
-            content-key="user_name"
-            @child-update="childUpdate($event)"
-          >
-          </question-edit-vue>
+              v-if="question.user_name"
+              :initial-value="question.user_name"
+              content-key="user_name"
+              @child-update="childUpdate($event)"
+            >
+            </question-edit-vue>
           </dd>
     </dl>
   </div>
@@ -53,7 +53,7 @@ export default {
   },
   methods:{
     childUpdate(columnValue){
-        this.question[Object.keys(columnValue)]= Object.values(columnValue)[0]
+        this.question[Object.keys(columnValue)] = Object.values(columnValue)[0]
     }
   }
 }

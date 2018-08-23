@@ -5,7 +5,7 @@
     <textarea
       class="form-control"
       type="text"
-      ref="ref"
+      ref="textarea"
       rows="3"
     ></textarea>
   </div>
@@ -13,7 +13,9 @@
 </template>
 <script>
   export default {
+    // 引数
     props:{},
+    // このcoponentsで使用される変数
     data(){},
     methods:{
       // 編集エリアを開ける
