@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Question from './Question.vue'
+import Question from './question.vue'
 
 new Vue({
   el: '#app',
