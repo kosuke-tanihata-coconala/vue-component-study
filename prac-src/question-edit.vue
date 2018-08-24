@@ -1,4 +1,4 @@
-<tempalte>
+<template>
 <div>
   <div>
     <span></span>
@@ -15,7 +15,7 @@
   export default {
     // 引数
     props:{},
-    // このcoponentsで使用される変数
+    // このcomponentsで使用される変数
     data(){},
     methods:{
       // 編集エリアを開ける

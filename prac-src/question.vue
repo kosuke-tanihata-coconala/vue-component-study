@@ -1,4 +1,4 @@
-<tempalte>
+<template>
   <div>
     <dl>
       <dt>相談タイトル</dt>
